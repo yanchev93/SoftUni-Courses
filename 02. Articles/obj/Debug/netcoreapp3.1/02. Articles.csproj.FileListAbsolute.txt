@@ -1,0 +1,13 @@
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\02. Articles\bin\Debug\netcoreapp3.1\02. Articles.exe
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\02. Articles\bin\Debug\netcoreapp3.1\02. Articles.deps.json
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\02. Articles\bin\Debug\netcoreapp3.1\02. Articles.runtimeconfig.json
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\02. Articles\bin\Debug\netcoreapp3.1\02. Articles.runtimeconfig.dev.json
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\02. Articles\bin\Debug\netcoreapp3.1\02. Articles.dll
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\02. Articles\bin\Debug\netcoreapp3.1\02. Articles.pdb
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\02. Articles\obj\Debug\netcoreapp3.1\02. Articles.csprojAssemblyReference.cache
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\02. Articles\obj\Debug\netcoreapp3.1\02. Articles.AssemblyInfoInputs.cache
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\02. Articles\obj\Debug\netcoreapp3.1\02. Articles.AssemblyInfo.cs
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\02. Articles\obj\Debug\netcoreapp3.1\02. Articles.csproj.CoreCompileInputs.cache
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\02. Articles\obj\Debug\netcoreapp3.1\02. Articles.dll
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\02. Articles\obj\Debug\netcoreapp3.1\02. Articles.pdb
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\02. Articles\obj\Debug\netcoreapp3.1\02. Articles.genruntimeconfig.cache

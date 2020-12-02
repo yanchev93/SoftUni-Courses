@@ -1,0 +1,13 @@
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. BigInteger\bin\Debug\netcoreapp3.1\04. BigInteger.exe
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. BigInteger\bin\Debug\netcoreapp3.1\04. BigInteger.deps.json
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. BigInteger\bin\Debug\netcoreapp3.1\04. BigInteger.runtimeconfig.json
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. BigInteger\bin\Debug\netcoreapp3.1\04. BigInteger.runtimeconfig.dev.json
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. BigInteger\bin\Debug\netcoreapp3.1\04. BigInteger.dll
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. BigInteger\bin\Debug\netcoreapp3.1\04. BigInteger.pdb
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. BigInteger\obj\Debug\netcoreapp3.1\04. BigInteger.csprojAssemblyReference.cache
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. BigInteger\obj\Debug\netcoreapp3.1\04. BigInteger.AssemblyInfoInputs.cache
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. BigInteger\obj\Debug\netcoreapp3.1\04. BigInteger.AssemblyInfo.cs
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. BigInteger\obj\Debug\netcoreapp3.1\04. BigInteger.csproj.CoreCompileInputs.cache
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. BigInteger\obj\Debug\netcoreapp3.1\04. BigInteger.dll
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. BigInteger\obj\Debug\netcoreapp3.1\04. BigInteger.pdb
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. BigInteger\obj\Debug\netcoreapp3.1\04. BigInteger.genruntimeconfig.cache

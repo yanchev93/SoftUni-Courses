@@ -1,0 +1,13 @@
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\01. AdvertisementMessage\bin\Debug\netcoreapp3.1\01. AdvertisementMessage.exe
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\01. AdvertisementMessage\bin\Debug\netcoreapp3.1\01. AdvertisementMessage.deps.json
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\01. AdvertisementMessage\bin\Debug\netcoreapp3.1\01. AdvertisementMessage.runtimeconfig.json
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\01. AdvertisementMessage\bin\Debug\netcoreapp3.1\01. AdvertisementMessage.runtimeconfig.dev.json
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\01. AdvertisementMessage\bin\Debug\netcoreapp3.1\01. AdvertisementMessage.dll
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\01. AdvertisementMessage\bin\Debug\netcoreapp3.1\01. AdvertisementMessage.pdb
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\01. AdvertisementMessage\obj\Debug\netcoreapp3.1\01. AdvertisementMessage.csprojAssemblyReference.cache
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\01. AdvertisementMessage\obj\Debug\netcoreapp3.1\01. AdvertisementMessage.AssemblyInfoInputs.cache
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\01. AdvertisementMessage\obj\Debug\netcoreapp3.1\01. AdvertisementMessage.AssemblyInfo.cs
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\01. AdvertisementMessage\obj\Debug\netcoreapp3.1\01. AdvertisementMessage.csproj.CoreCompileInputs.cache
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\01. AdvertisementMessage\obj\Debug\netcoreapp3.1\01. AdvertisementMessage.dll
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\01. AdvertisementMessage\obj\Debug\netcoreapp3.1\01. AdvertisementMessage.pdb
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\01. AdvertisementMessage\obj\Debug\netcoreapp3.1\01. AdvertisementMessage.genruntimeconfig.cache

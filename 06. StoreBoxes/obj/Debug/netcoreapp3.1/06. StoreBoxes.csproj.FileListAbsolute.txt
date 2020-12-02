@@ -1,0 +1,13 @@
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\06. StoreBoxes\bin\Debug\netcoreapp3.1\06. StoreBoxes.exe
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\06. StoreBoxes\bin\Debug\netcoreapp3.1\06. StoreBoxes.deps.json
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\06. StoreBoxes\bin\Debug\netcoreapp3.1\06. StoreBoxes.runtimeconfig.json
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\06. StoreBoxes\bin\Debug\netcoreapp3.1\06. StoreBoxes.runtimeconfig.dev.json
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\06. StoreBoxes\bin\Debug\netcoreapp3.1\06. StoreBoxes.dll
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\06. StoreBoxes\bin\Debug\netcoreapp3.1\06. StoreBoxes.pdb
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\06. StoreBoxes\obj\Debug\netcoreapp3.1\06. StoreBoxes.csprojAssemblyReference.cache
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\06. StoreBoxes\obj\Debug\netcoreapp3.1\06. StoreBoxes.AssemblyInfoInputs.cache
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\06. StoreBoxes\obj\Debug\netcoreapp3.1\06. StoreBoxes.AssemblyInfo.cs
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\06. StoreBoxes\obj\Debug\netcoreapp3.1\06. StoreBoxes.csproj.CoreCompileInputs.cache
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\06. StoreBoxes\obj\Debug\netcoreapp3.1\06. StoreBoxes.dll
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\06. StoreBoxes\obj\Debug\netcoreapp3.1\06. StoreBoxes.pdb
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\06. StoreBoxes\obj\Debug\netcoreapp3.1\06. StoreBoxes.genruntimeconfig.cache

@@ -1,0 +1,12 @@
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. StudentsExercise\bin\Debug\netcoreapp3.1\04. StudentsExercise.exe
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. StudentsExercise\bin\Debug\netcoreapp3.1\04. StudentsExercise.deps.json
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. StudentsExercise\bin\Debug\netcoreapp3.1\04. StudentsExercise.runtimeconfig.json
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. StudentsExercise\bin\Debug\netcoreapp3.1\04. StudentsExercise.runtimeconfig.dev.json
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. StudentsExercise\bin\Debug\netcoreapp3.1\04. StudentsExercise.dll
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. StudentsExercise\bin\Debug\netcoreapp3.1\04. StudentsExercise.pdb
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. StudentsExercise\obj\Debug\netcoreapp3.1\04. StudentsExercise.AssemblyInfoInputs.cache
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. StudentsExercise\obj\Debug\netcoreapp3.1\04. StudentsExercise.AssemblyInfo.cs
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. StudentsExercise\obj\Debug\netcoreapp3.1\04. StudentsExercise.csproj.CoreCompileInputs.cache
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. StudentsExercise\obj\Debug\netcoreapp3.1\04. StudentsExercise.dll
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. StudentsExercise\obj\Debug\netcoreapp3.1\04. StudentsExercise.pdb
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. StudentsExercise\obj\Debug\netcoreapp3.1\04. StudentsExercise.genruntimeconfig.cache
