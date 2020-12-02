@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArraysExercise", "ArraysExercise\ArraysExercise.csproj", "{E93DF847-7751-4C96-BDC3-C12CCEFA2F14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.CommonElements", "2.CommonElements\2.CommonElements.csproj", "{2BEC2457-197C-4D4F-8665-26C572671FDE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E93DF847-7751-4C96-BDC3-C12CCEFA2F14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E93DF847-7751-4C96-BDC3-C12CCEFA2F14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E93DF847-7751-4C96-BDC3-C12CCEFA2F14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E93DF847-7751-4C96-BDC3-C12CCEFA2F14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BEC2457-197C-4D4F-8665-26C572671FDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BEC2457-197C-4D4F-8665-26C572671FDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BEC2457-197C-4D4F-8665-26C572671FDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BEC2457-197C-4D4F-8665-26C572671FDE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {885B8446-8DDE-4293-A796-B20015DBB60A}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "exerciseIfElse": {
+      "commandName": "Project",
+      "commandLineArgs": "--testMeters 15"
+    }
+  }
+}

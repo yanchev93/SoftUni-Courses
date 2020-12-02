@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.SignOfIntegerNumbers", "MethodsFunctions\1.SignOfIntegerNumbers.csproj", "{6CC477A3-733C-44EF-9718-160BF5723437}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6CC477A3-733C-44EF-9718-160BF5723437}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CC477A3-733C-44EF-9718-160BF5723437}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CC477A3-733C-44EF-9718-160BF5723437}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CC477A3-733C-44EF-9718-160BF5723437}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4FB79FB1-397A-4995-9069-AD9DC550F794}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. TheHuntingGames", "01. TheHuntingGames.csproj", "{E61EA60D-6CEA-4029-BCD3-67B1112585EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. SeizeTheFIre", "..\02. NumbersInRevers\02. SeizeTheFIre.csproj", "{D5439B0E-529F-4BC4-8AB5-30925FCA5040}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E61EA60D-6CEA-4029-BCD3-67B1112585EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E61EA60D-6CEA-4029-BCD3-67B1112585EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E61EA60D-6CEA-4029-BCD3-67B1112585EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E61EA60D-6CEA-4029-BCD3-67B1112585EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5439B0E-529F-4BC4-8AB5-30925FCA5040}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5439B0E-529F-4BC4-8AB5-30925FCA5040}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5439B0E-529F-4BC4-8AB5-30925FCA5040}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5439B0E-529F-4BC4-8AB5-30925FCA5040}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5BA70641-BA23-4F1E-94CF-700C2DF9DC4C}
+	EndGlobalSection
+EndGlobal
