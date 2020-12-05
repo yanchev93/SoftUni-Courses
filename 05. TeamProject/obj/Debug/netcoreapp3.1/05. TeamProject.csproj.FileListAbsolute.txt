@@ -1,0 +1,13 @@
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\05. TeamProject\bin\Debug\netcoreapp3.1\05. TeamProject.exe
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\05. TeamProject\bin\Debug\netcoreapp3.1\05. TeamProject.deps.json
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\05. TeamProject\bin\Debug\netcoreapp3.1\05. TeamProject.runtimeconfig.json
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\05. TeamProject\bin\Debug\netcoreapp3.1\05. TeamProject.runtimeconfig.dev.json
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\05. TeamProject\bin\Debug\netcoreapp3.1\05. TeamProject.dll
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\05. TeamProject\bin\Debug\netcoreapp3.1\05. TeamProject.pdb
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\05. TeamProject\obj\Debug\netcoreapp3.1\05. TeamProject.csprojAssemblyReference.cache
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\05. TeamProject\obj\Debug\netcoreapp3.1\05. TeamProject.AssemblyInfoInputs.cache
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\05. TeamProject\obj\Debug\netcoreapp3.1\05. TeamProject.AssemblyInfo.cs
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\05. TeamProject\obj\Debug\netcoreapp3.1\05. TeamProject.csproj.CoreCompileInputs.cache
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\05. TeamProject\obj\Debug\netcoreapp3.1\05. TeamProject.dll
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\05. TeamProject\obj\Debug\netcoreapp3.1\05. TeamProject.pdb
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\05. TeamProject\obj\Debug\netcoreapp3.1\05. TeamProject.genruntimeconfig.cache

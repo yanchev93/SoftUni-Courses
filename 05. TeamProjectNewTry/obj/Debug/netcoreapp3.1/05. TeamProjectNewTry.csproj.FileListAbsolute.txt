@@ -1,0 +1,13 @@
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\05. TeamProjectNewTry\bin\Debug\netcoreapp3.1\05. TeamProjectNewTry.exe
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\05. TeamProjectNewTry\bin\Debug\netcoreapp3.1\05. TeamProjectNewTry.deps.json
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\05. TeamProjectNewTry\bin\Debug\netcoreapp3.1\05. TeamProjectNewTry.runtimeconfig.json
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\05. TeamProjectNewTry\bin\Debug\netcoreapp3.1\05. TeamProjectNewTry.runtimeconfig.dev.json
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\05. TeamProjectNewTry\bin\Debug\netcoreapp3.1\05. TeamProjectNewTry.dll
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\05. TeamProjectNewTry\bin\Debug\netcoreapp3.1\05. TeamProjectNewTry.pdb
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\05. TeamProjectNewTry\obj\Debug\netcoreapp3.1\05. TeamProjectNewTry.csprojAssemblyReference.cache
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\05. TeamProjectNewTry\obj\Debug\netcoreapp3.1\05. TeamProjectNewTry.AssemblyInfoInputs.cache
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\05. TeamProjectNewTry\obj\Debug\netcoreapp3.1\05. TeamProjectNewTry.AssemblyInfo.cs
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\05. TeamProjectNewTry\obj\Debug\netcoreapp3.1\05. TeamProjectNewTry.csproj.CoreCompileInputs.cache
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\05. TeamProjectNewTry\obj\Debug\netcoreapp3.1\05. TeamProjectNewTry.dll
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\05. TeamProjectNewTry\obj\Debug\netcoreapp3.1\05. TeamProjectNewTry.pdb
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\05. TeamProjectNewTry\obj\Debug\netcoreapp3.1\05. TeamProjectNewTry.genruntimeconfig.cache

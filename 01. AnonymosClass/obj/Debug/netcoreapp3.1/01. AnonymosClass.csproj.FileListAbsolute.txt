@@ -1,0 +1,13 @@
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\01. AnonymosClass\bin\Debug\netcoreapp3.1\01. AnonymosClass.exe
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\01. AnonymosClass\bin\Debug\netcoreapp3.1\01. AnonymosClass.deps.json
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\01. AnonymosClass\bin\Debug\netcoreapp3.1\01. AnonymosClass.runtimeconfig.json
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\01. AnonymosClass\bin\Debug\netcoreapp3.1\01. AnonymosClass.runtimeconfig.dev.json
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\01. AnonymosClass\bin\Debug\netcoreapp3.1\01. AnonymosClass.dll
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\01. AnonymosClass\bin\Debug\netcoreapp3.1\01. AnonymosClass.pdb
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\01. AnonymosClass\obj\Debug\netcoreapp3.1\01. AnonymosClass.csprojAssemblyReference.cache
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\01. AnonymosClass\obj\Debug\netcoreapp3.1\01. AnonymosClass.AssemblyInfoInputs.cache
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\01. AnonymosClass\obj\Debug\netcoreapp3.1\01. AnonymosClass.AssemblyInfo.cs
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\01. AnonymosClass\obj\Debug\netcoreapp3.1\01. AnonymosClass.csproj.CoreCompileInputs.cache
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\01. AnonymosClass\obj\Debug\netcoreapp3.1\01. AnonymosClass.dll
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\01. AnonymosClass\obj\Debug\netcoreapp3.1\01. AnonymosClass.pdb
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\01. AnonymosClass\obj\Debug\netcoreapp3.1\01. AnonymosClass.genruntimeconfig.cache

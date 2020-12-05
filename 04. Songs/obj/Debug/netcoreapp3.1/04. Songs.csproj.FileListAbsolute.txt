@@ -1,0 +1,13 @@
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. Songs\bin\Debug\netcoreapp3.1\04. Songs.exe
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. Songs\bin\Debug\netcoreapp3.1\04. Songs.deps.json
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. Songs\bin\Debug\netcoreapp3.1\04. Songs.runtimeconfig.json
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. Songs\bin\Debug\netcoreapp3.1\04. Songs.runtimeconfig.dev.json
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. Songs\bin\Debug\netcoreapp3.1\04. Songs.dll
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. Songs\bin\Debug\netcoreapp3.1\04. Songs.pdb
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. Songs\obj\Debug\netcoreapp3.1\04. Songs.csprojAssemblyReference.cache
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. Songs\obj\Debug\netcoreapp3.1\04. Songs.AssemblyInfoInputs.cache
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. Songs\obj\Debug\netcoreapp3.1\04. Songs.AssemblyInfo.cs
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. Songs\obj\Debug\netcoreapp3.1\04. Songs.csproj.CoreCompileInputs.cache
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. Songs\obj\Debug\netcoreapp3.1\04. Songs.dll
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. Songs\obj\Debug\netcoreapp3.1\04. Songs.pdb
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. Songs\obj\Debug\netcoreapp3.1\04. Songs.genruntimeconfig.cache

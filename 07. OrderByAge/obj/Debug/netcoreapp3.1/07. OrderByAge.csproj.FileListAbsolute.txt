@@ -1,0 +1,12 @@
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\07. OrderByAge\bin\Debug\netcoreapp3.1\07. OrderByAge.exe
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\07. OrderByAge\bin\Debug\netcoreapp3.1\07. OrderByAge.deps.json
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\07. OrderByAge\bin\Debug\netcoreapp3.1\07. OrderByAge.runtimeconfig.json
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\07. OrderByAge\bin\Debug\netcoreapp3.1\07. OrderByAge.runtimeconfig.dev.json
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\07. OrderByAge\bin\Debug\netcoreapp3.1\07. OrderByAge.dll
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\07. OrderByAge\bin\Debug\netcoreapp3.1\07. OrderByAge.pdb
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\07. OrderByAge\obj\Debug\netcoreapp3.1\07. OrderByAge.AssemblyInfoInputs.cache
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\07. OrderByAge\obj\Debug\netcoreapp3.1\07. OrderByAge.AssemblyInfo.cs
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\07. OrderByAge\obj\Debug\netcoreapp3.1\07. OrderByAge.csproj.CoreCompileInputs.cache
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\07. OrderByAge\obj\Debug\netcoreapp3.1\07. OrderByAge.dll
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\07. OrderByAge\obj\Debug\netcoreapp3.1\07. OrderByAge.pdb
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\07. OrderByAge\obj\Debug\netcoreapp3.1\07. OrderByAge.genruntimeconfig.cache

@@ -1,0 +1,13 @@
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. Students\obj\Debug\netcoreapp3.1\04. StudentsLab.csprojAssemblyReference.cache
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. Students\obj\Debug\netcoreapp3.1\04. StudentsLab.AssemblyInfoInputs.cache
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. Students\obj\Debug\netcoreapp3.1\04. StudentsLab.AssemblyInfo.cs
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. Students\obj\Debug\netcoreapp3.1\04. StudentsLab.csproj.CoreCompileInputs.cache
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. Students\bin\Debug\netcoreapp3.1\04. StudentsLab.exe
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. Students\bin\Debug\netcoreapp3.1\04. StudentsLab.deps.json
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. Students\bin\Debug\netcoreapp3.1\04. StudentsLab.runtimeconfig.json
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. Students\bin\Debug\netcoreapp3.1\04. StudentsLab.runtimeconfig.dev.json
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. Students\bin\Debug\netcoreapp3.1\04. StudentsLab.dll
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. Students\bin\Debug\netcoreapp3.1\04. StudentsLab.pdb
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. Students\obj\Debug\netcoreapp3.1\04. StudentsLab.dll
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. Students\obj\Debug\netcoreapp3.1\04. StudentsLab.pdb
+D:\Programs\01. SoftUni\C# - SoftUni\ClassesAndObjects\04. Students\obj\Debug\netcoreapp3.1\04. StudentsLab.genruntimeconfig.cache
