@@ -17,7 +17,6 @@ namespace _01._BasicStackOperations
             int pop = input[1];
             int search = input[2];
 
-            int minNum = int.MaxValue;
             for (int i = 0; i < push; i++)
             {
                 stack.Push(numbers[i]);
