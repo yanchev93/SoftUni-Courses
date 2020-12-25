@@ -5,7 +5,7 @@ namespace MultidimensionalArraysExercise
 {
     class StartUp
     {
-        static void Main(string[] args)
+        static void Main()
         {
             int n = int.Parse(Console.ReadLine());
 

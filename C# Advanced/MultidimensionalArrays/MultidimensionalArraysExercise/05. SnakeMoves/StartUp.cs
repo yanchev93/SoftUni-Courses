@@ -5,7 +5,7 @@ namespace _05._SnakeMoves
 {
     class StartUp
     {
-        static void Main(string[] args)
+        static void Main()
         {
             int[] matrixDimension = Console.ReadLine().Split(' ',
                 StringSplitOptions.RemoveEmptyEntries)
@@ -70,22 +70,6 @@ namespace _05._SnakeMoves
                     Console.Write(matrix[row, col]);
                 }
                 Console.WriteLine();
-            }
-        }
-
-        private static void CreateMatrix(char[,] matrix)
-        {
-            for (int row = 0; row < matrix.GetLength(0); row++)
-            {
-                char[] inputMatrix = Console.ReadLine().Split(' ',
-                    StringSplitOptions.RemoveEmptyEntries)
-                    .Select(char.Parse)
-                    .ToArray();
-
-                for (int col = 0; col < matrix.GetLength(1); col++)
-                {
-                    matrix[row, col] = inputMatrix[col];
-                }
             }
         }
     }

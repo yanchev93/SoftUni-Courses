@@ -5,7 +5,7 @@ namespace _03._MaximalSum
 {
     class StartUp
     {
-        static void Main(string[] args)
+        static void Main()
         {
             int[] rNc = Console.ReadLine().Split(' ',
                 StringSplitOptions.RemoveEmptyEntries)

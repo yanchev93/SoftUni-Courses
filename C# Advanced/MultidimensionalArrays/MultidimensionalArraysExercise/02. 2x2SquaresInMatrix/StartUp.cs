@@ -5,7 +5,7 @@ namespace _02._2x2SquaresInMatrix
 {
     class StartUp
     {
-        static void Main(string[] args)
+        static void Main()
         {
             int[] inputMatrix = Console.ReadLine().Split(' ',
                 StringSplitOptions.RemoveEmptyEntries)

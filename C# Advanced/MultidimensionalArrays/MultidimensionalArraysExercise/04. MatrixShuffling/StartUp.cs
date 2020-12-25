@@ -5,7 +5,7 @@ namespace _04._MatrixShuffling
 {
     class StartUp
     {
-        static void Main(string[] args)
+        static void Main()
         {
             int[] matrixDimensions = Console.ReadLine().Split().Select(int.Parse).ToArray();
             int rows = matrixDimensions[0];
