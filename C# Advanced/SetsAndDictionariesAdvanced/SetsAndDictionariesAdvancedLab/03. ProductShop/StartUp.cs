@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace _03._ProductShop
 {
-    class Program
+    class StartUp
     {
         static void Main()
         {
