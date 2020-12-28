@@ -9,9 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. AverageStudentGrades", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03. ProductShop", "..\03. ProductShop\03. ProductShop.csproj", "{2D1D36C2-E58B-436F-8B5E-79007D901565}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. CitiesByContinentAndCountry", "..\04. CitiesByContinentAndCountry\04. CitiesByContinentAndCountry.csproj", "{C413F1C0-20AC-4F08-9C88-1F9FCD4EDC66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04. CitiesByContinentAndCountry", "..\04. CitiesByContinentAndCountry\04. CitiesByContinentAndCountry.csproj", "{C413F1C0-20AC-4F08-9C88-1F9FCD4EDC66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. RecordUniqueNames", "..\05. RecordUniqueNames\05. RecordUniqueNames.csproj", "{130A1C7E-A4EB-4282-8BA0-1A768C6165EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05. RecordUniqueNames", "..\05. RecordUniqueNames\05. RecordUniqueNames.csproj", "{130A1C7E-A4EB-4282-8BA0-1A768C6165EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. ParkingLot", "..\06. ParkingLot\06. ParkingLot.csproj", "{038C1571-5825-4EC2-B810-1C8D2C04F201}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. SoftUniParty", "..\07. SoftUniParty\07. SoftUniParty.csproj", "{2D55C6E6-B1C7-48A6-BC67-BA02CCD757CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{130A1C7E-A4EB-4282-8BA0-1A768C6165EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{130A1C7E-A4EB-4282-8BA0-1A768C6165EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{130A1C7E-A4EB-4282-8BA0-1A768C6165EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{038C1571-5825-4EC2-B810-1C8D2C04F201}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{038C1571-5825-4EC2-B810-1C8D2C04F201}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{038C1571-5825-4EC2-B810-1C8D2C04F201}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{038C1571-5825-4EC2-B810-1C8D2C04F201}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D55C6E6-B1C7-48A6-BC67-BA02CCD757CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D55C6E6-B1C7-48A6-BC67-BA02CCD757CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D55C6E6-B1C7-48A6-BC67-BA02CCD757CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D55C6E6-B1C7-48A6-BC67-BA02CCD757CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
