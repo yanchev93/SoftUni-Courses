@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. OddLines", "01. OddLines.csproj", "{A0CD06C5-78F9-4407-B798-347BE0FDB37E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. OddLines", "01. OddLines.csproj", "{A0CD06C5-78F9-4407-B798-347BE0FDB37E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. LineNumbers", "..\02. LineNumbers\02. LineNumbers.csproj", "{4237A09F-6143-46DE-8AB4-BA669C7CAF1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. LineNumbers", "..\02. LineNumbers\02. LineNumbers.csproj", "{4237A09F-6143-46DE-8AB4-BA669C7CAF1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. WordCount", "..\03. WordCount\03. WordCount.csproj", "{A43CB4BF-50F2-4825-957F-08CFFD8657D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03. WordCount", "..\03. WordCount\03. WordCount.csproj", "{A43CB4BF-50F2-4825-957F-08CFFD8657D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. MergeFiles", "..\04. MergeFiles\04. MergeFiles.csproj", "{20AA9D5F-2D7C-4F4E-9884-39F87CC08E70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04. MergeFiles", "..\04. MergeFiles\04. MergeFiles.csproj", "{20AA9D5F-2D7C-4F4E-9884-39F87CC08E70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. SliceAFile", "..\05. SliceAFile\05. SliceAFile.csproj", "{0FAADD6E-1D53-4CBB-B4CF-F89329624316}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{20AA9D5F-2D7C-4F4E-9884-39F87CC08E70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20AA9D5F-2D7C-4F4E-9884-39F87CC08E70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20AA9D5F-2D7C-4F4E-9884-39F87CC08E70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FAADD6E-1D53-4CBB-B4CF-F89329624316}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FAADD6E-1D53-4CBB-B4CF-F89329624316}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FAADD6E-1D53-4CBB-B4CF-F89329624316}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FAADD6E-1D53-4CBB-B4CF-F89329624316}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
