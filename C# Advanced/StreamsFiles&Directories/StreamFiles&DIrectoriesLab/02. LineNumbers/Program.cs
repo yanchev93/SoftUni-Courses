@@ -5,7 +5,7 @@ namespace _02._LineNumbers
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             using var reader = new StreamReader("../../../Input.txt");
             using var writer = new StreamWriter("../../../Output.txt");
