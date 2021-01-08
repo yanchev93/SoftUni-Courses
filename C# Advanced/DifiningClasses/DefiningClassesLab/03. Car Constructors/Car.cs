@@ -9,6 +9,8 @@ namespace CarManufacturer
         private int year;
         private double fuelQuantity;
         private double fuelConsumption;
+        private Engine engine;
+        private Tire[] tires;
 
         public Car()
         {
@@ -33,32 +35,49 @@ namespace CarManufacturer
             this.FuelConsumption = fuelConsumption;
         }
 
+        public Car(string make, string model, int year,
+                   double fuelQuantity, double fuelConsumption, Engine engine, Tire[] tires)
+                    : this(make, model, year, fuelQuantity, fuelConsumption)
+        {
+            this.Engine = engine;
+            this.Tires = tires;
+        }
+
         public string Make
         {
-            get { return this.make; }
-            set { this.make = value; }
+            get => this.make;
+            set => this.make = value;
         }
         public string Model
         {
-            get { return this.model; }
-            set { this.model = value; }
+            get => this.model;
+            set => this.model = value;
         }
         public int Year
         {
-            get { return this.year; }
-            set { this.year = value; }
+            get => this.year;
+            set => this.year = value;
         }
         public double FuelQuantity
         {
-            get { return this.fuelQuantity; }
-            set { this.fuelQuantity = value; }
+            get => this.fuelQuantity;
+            set => this.fuelQuantity = value;
         }
         public double FuelConsumption
         {
-            get { return this.fuelConsumption; }
-            set { this.fuelConsumption = value; }
+            get => this.fuelConsumption;
+            set => this.fuelConsumption = value;
         }
-
+        public Engine Engine
+        {
+            get => this.engine;
+            set => this.engine = value;
+        }
+        public Tire[] Tires
+        {
+            get => this.tires;
+            set => this.tires = value;
+        }
         public void Drive(double distance)
         {
             double consumptionKM = distance * this.fuelConsumption;
