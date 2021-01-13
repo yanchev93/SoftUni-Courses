@@ -11,51 +11,73 @@ namespace DefiningClasses
             List<Car> carList = new List<Car>();
 
             int n = int.Parse(Console.ReadLine());
-
             for (int i = 0; i < n; i++)
             {
-                string[] currentCar = Console.ReadLine()
+                string[] infoCar = Console.ReadLine()
                     .Split(' ', StringSplitOptions.RemoveEmptyEntries)
                     .ToArray();
-                string model = currentCar[0];
-                double fuelAmount = double.Parse(currentCar[1]);
-                double fuelConsumptionForOneKm = double.Parse(currentCar[2]);
 
-                Car car = new Car(model, fuelAmount, fuelConsumptionForOneKm);
-                carList.Add(car);
-            }
+                string model = infoCar[0];
 
-            string command = Console.ReadLine();
-            while(command != "End")
-            {
-                string[] currentCommand = command
-                    .Split(' ', StringSplitOptions.RemoveEmptyEntries)
-                    .ToArray();
-                string instruction = currentCommand[0];
-                string carModel = currentCommand[1];
-                double amountOfKm = double.Parse(currentCommand[2]);
+                int engineSpeed = int.Parse(infoCar[1]);
+                int enginePower = int.Parse(infoCar[2]);
 
-                if (instruction != "Drive")
+                Engine engine = new Engine(engineSpeed, enginePower);
+
+                int cargoWeight = int.Parse(infoCar[3]);
+                string cargoType = infoCar[4];
+
+                Cargo cargo = new Cargo(cargoWeight, cargoType);
+
+                Tire[] tires = new Tire[4];
+
+                int count = 0;
+                for (int tireStart = 5; tireStart < infoCar.Length; tireStart += 2)
                 {
-                    command = Console.ReadLine();
-                    continue;
+                    double tirePressure = double.Parse(infoCar[tireStart]);
+                    int tireAge = int.Parse(infoCar[tireStart + 1]);
+
+                    Tire tire = new Tire(tireAge, tirePressure);
+
+                    tires[count] = tire;
+                    count += 1;
                 }
 
-                Car driveCar = carList.Find(c => c.Model == carModel);
+                Car currentCar = new Car(model, cargo, engine, tires);
 
-                driveCar.DriveCar(driveCar, amountOfKm);
-
-                command = Console.ReadLine();
+                carList.Add(currentCar);
             }
 
-            foreach (Car car in carList)
+            string inputCargo = Console.ReadLine();
+
+            if (inputCargo == "fragile")
             {
-                string carModel = car.Model;
-                double carFuelAmount = car.FuelAmount;
-                double carDistanceTraveled = car.TravelledDistance;
-                Console.WriteLine($"{carModel} {carFuelAmount:f2} {carDistanceTraveled}");
-            }
+                foreach (Car car in carList.FindAll(c => c.Cargo.CargoType == "fragile"))
+                {
+                    bool isValid = false;
+                    foreach (Tire tirePressure in car.Tires)
+                    {
+                        if (tirePressure.TirePressure < 1)
+                        {
+                            isValid = true;
+                            break;
+                        }
+                    }
 
+                    if (isValid)
+                    {
+                        Console.WriteLine(car.Model);
+                    }
+                }
+            }
+            else if (inputCargo == "flamable")
+            {
+                foreach (Car car in carList.FindAll((c => c.Cargo.CargoType == "flamable"
+                && c.Engine.EnginePower > 250)))
+                {
+                    Console.WriteLine(car.Model);
+                }
+            }
         }
     }
 }

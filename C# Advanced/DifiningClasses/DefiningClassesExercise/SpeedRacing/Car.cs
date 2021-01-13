@@ -5,55 +5,41 @@ namespace DefiningClasses
     public class Car
     {
         private string model;
-        private double fuelAmount;
-        private double fuelConsumptionPerKilometer;
-        private double travelledDistance;
+        private Cargo cargo;
+        private Engine engine;
+        private Tire[] tires;
 
-        public Car(string model, double fuelAmount, double fuelConsumptionPerKilometer)
+        public Car(string model, Cargo cargo, Engine engine, Tire[] tires)
         {
-            this.Model = model;
-            this.FuelAmount = fuelAmount;
-            this.FuelConsumptionPerKilometer = fuelConsumptionPerKilometer;
-            this.TravelledDistance = 0;
+            Model = model;
+            Cargo = cargo;
+            Engine = engine;
+            Tires = tires;
         }
 
         public string Model
         {
-            get { return this.model; }
-            set { this.model = value; }
+            get { return model; }
+            set { model = value; }
         }
 
-        public double FuelAmount
+        public Cargo Cargo
         {
-            get { return this.fuelAmount; }
-            set { this.fuelAmount = value; }
+            get { return cargo; }
+            set { cargo = value; }
         }
-
-        public double FuelConsumptionPerKilometer
+        public Engine Engine
         {
-            get { return this.fuelConsumptionPerKilometer; }
-            set { this.fuelConsumptionPerKilometer = value; }
+            get { return engine; }
+            set { engine = value; }
         }
 
-        public double TravelledDistance
+        public Tire[] Tires
         {
-            get { return this.travelledDistance; }
-            set { this.travelledDistance = value; }
+            get { return tires; }
+            set { tires = value; }
         }
 
-        public void DriveCar(Car car, double amountOfKm)
-        {
-            double neededFuelToDrive = amountOfKm * car.FuelConsumptionPerKilometer;
 
-            if (neededFuelToDrive <= car.FuelAmount)
-            {
-                car.FuelAmount -= neededFuelToDrive;
-                car.TravelledDistance += amountOfKm;
-            }
-            else
-            {
-                Console.WriteLine("Insufficient fuel for the drive");
-            }
-        }
     }
 }
