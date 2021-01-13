@@ -80,7 +80,7 @@ namespace CarManufacturer
         }
         public void Drive(double distance)
         {
-            double consumptionKM = distance * this.fuelConsumption;
+            double consumptionKM = distance * (this.fuelConsumption / 100);
             if (consumptionKM < fuelQuantity)
             {
                 this.fuelQuantity -= consumptionKM;
