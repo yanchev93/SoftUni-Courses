@@ -8,119 +8,77 @@ namespace DefiningClasses
     {
         public static void Main()
         {
-            List<Engine> engines = new List<Engine>();
-            List<Car> cars = new List<Car>();
+            List<Trainer> trainers = new List<Trainer>();
 
-            int n = int.Parse(Console.ReadLine());
-            for (int i = 0; i < n; i++)
+            string command = Console.ReadLine();
+            int appearance = 1;
+            while (command != "Tournament")
             {
-                string[] engineInfo = Console.ReadLine()
+                string[] currentCommand = command
                     .Split(' ', StringSplitOptions.RemoveEmptyEntries)
                     .ToArray();
+                string trainerName = currentCommand[0];
+                string pokemonName = currentCommand[1];
+                string pokemonElement = currentCommand[2];
+                int pokemonHealth = int.Parse(currentCommand[3]);
 
-                InputDataEngine(engineInfo, engines);
-            }
+                Pokemon pokemon = new Pokemon(pokemonName, pokemonElement, pokemonHealth);
 
-            int m = int.Parse(Console.ReadLine());
-            for (int i = 0; i < m; i++)
-            {
-                string[] carInfo = Console.ReadLine()
-                    .Split(' ', StringSplitOptions.RemoveEmptyEntries)
-                    .ToArray();
-
-                InputDataCar(carInfo, cars, engines);
-            }
-
-            Console.WriteLine(string.Join(Environment.NewLine, cars));
-        }
-
-        private static void InputDataCar(string[] info, List<Car> cars, List<Engine> engines)
-        {
-            string model = info[0];
-            string engine = info[1];
-            Engine findEngine = engines.Find(p => p.Model == engine);
-
-            if(info.Length == 2)
-            {
-                Car car = new Car(model, findEngine);
-
-                cars.Add(car);
-            }
-            else if (info.Length == 3)
-            {
-                int weight;
-
-                bool isWeight = int.TryParse(info[2], out weight);
-
-                if (isWeight)
+                if (trainers.Any(n => n.Name == trainerName))
                 {
-                    weight = int.Parse(info[2]);
+                    Trainer trainer = trainers.Find(n => n.Name == trainerName);
 
-                    Car car = new Car(model, findEngine, weight);
-
-                    cars.Add(car);
+                    trainer.AddPokemon(pokemon);
                 }
                 else
                 {
-                    string color = info[2];
+                    Trainer trainer = new Trainer(trainerName, 0, appearance);
 
-                    Car car = new Car(model, findEngine, color);
+                    trainer.AddPokemon(pokemon);
 
-                    cars.Add(car);
+                    trainers.Add(trainer);
                 }
+
+                appearance += 1;
+                command = Console.ReadLine();
             }
-            else if (info.Length == 4)
+
+            command = Console.ReadLine();
+            while (command != "End")
             {
-                int weight = int.Parse(info[2]);
-                string color = info[3];
-
-                Car car = new Car(model, findEngine, weight, color);
-
-                cars.Add(car);
-            }
-        }
-
-        private static void InputDataEngine(string[] info, List<Engine> engines)
-        {
-            string model = info[0];
-            int power = int.Parse(info[1]);
-
-            if (info.Length == 2)
-            {
-                Engine engine = new Engine(model, power);
-
-                engines.Add(engine);
-            }
-            else if (info.Length == 3)
-            {
-                int displacement;
-
-                bool isDisplacement = int.TryParse(info[2], out displacement);
-
-                if (isDisplacement)
+                foreach (Trainer trainer in trainers)
                 {
-                    Engine engine = new Engine(model, power, displacement);
+                    List<Pokemon> pokemonList = trainer.ACollectionOfPokemon;
 
-                    engines.Add(engine);
+                    if (trainer.ACollectionOfPokemon.Any(p => p.Element == command))
+                    {
+                        trainer.NumberOfBadges += 1;
+                    }
+                    else
+                    {
+                        foreach (Pokemon pokemon in pokemonList)
+                        {
+                            pokemon.Health -= 10;
+                        }
+
+                        trainer.ACollectionOfPokemon.RemoveAll(p => p.Health <= 0);
+                    }
+
                 }
-                else
-                {
-                    string efficiency = info[2];
 
-                    Engine engine = new Engine(model, power, efficiency);
-
-                    engines.Add(engine);
-                }
+                command = Console.ReadLine();
             }
-            else if (info.Length == 4)
-            {
-                int displacement = int.Parse(info[2]);
-                string efficiency = info[3];
 
-                Engine engine = new Engine(model, power, displacement, efficiency);
+            trainers = trainers
+                      .OrderByDescending(b => b.NumberOfBadges)
+                      .ToList();
 
-                engines.Add(engine);
-            }
+            Console.WriteLine(string.Join(Environment.NewLine, trainers));
+
+            // foreach (Trainer trainer in trainers)
+            // {
+            //     Console.WriteLine($"{trainer.Name} {trainer.NumberOfBadges} {trainer.ACollectionOfPokemon.Count}");
+            // }
         }
     }
 }
