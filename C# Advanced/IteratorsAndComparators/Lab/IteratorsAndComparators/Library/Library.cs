@@ -18,6 +18,8 @@ namespace IteratorsAndComparators
 
         public IEnumerator<Book> GetEnumerator()
         {
+            books.Sort();
+
             foreach (var item in this.books)
             {
                 yield return item;
