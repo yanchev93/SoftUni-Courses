@@ -8,16 +8,19 @@ namespace IteratorsAndComparators
     public class Library : IEnumerable<Book>
     {
         private List<Book> books;
+
         public Library(params Book[] books)
         {
             this.books = new List<Book>(books);
         }
 
+        public IEnumerable<Book> OrderBY { get; internal set; }
+
         public IEnumerator<Book> GetEnumerator()
         {
-            foreach (var book in books)
+            foreach (var item in this.books)
             {
-                yield return book;
+                yield return item;
             }
         }
 
