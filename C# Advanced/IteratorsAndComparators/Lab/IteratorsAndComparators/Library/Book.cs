@@ -18,6 +18,8 @@ namespace IteratorsAndComparators
         public int Year { get; private set; }
         public IReadOnlyList<string> Authors { get; private set; }
 
+        
+
         public int CompareTo(Book other)
         {
             int result = this.Year.CompareTo(other.Year);

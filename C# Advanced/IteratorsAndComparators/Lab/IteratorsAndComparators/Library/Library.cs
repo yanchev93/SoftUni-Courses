@@ -18,7 +18,7 @@ namespace IteratorsAndComparators
 
         public IEnumerator<Book> GetEnumerator()
         {
-            books.Sort();
+            books.Sort(new BookComparator());
 
             foreach (var item in this.books)
             {
