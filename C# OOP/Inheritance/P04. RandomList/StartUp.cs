@@ -1,5 +1,6 @@
 ﻿using P04._RandomList;
 using System;
+using System.Collections.Generic;
 
 namespace CustomRandomList
 {
@@ -14,10 +15,14 @@ namespace CustomRandomList
                 rndList.Add($"{i} Add");
             }
 
-            string returned = rndList.Remove();
+            List<string> mylist = new List<string>();
+            
+
 
             while (rndList.Counter > 0)
             {
+                string returned = rndList.Remove();
+
                 Console.WriteLine(returned);
             }
         }
