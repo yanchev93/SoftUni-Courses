@@ -19,7 +19,7 @@ namespace CustomRandomList
             
 
 
-            while (rndList.Counter > 0)
+            while (rndList.Count > 0)
             {
                 string returned = rndList.Remove();
 

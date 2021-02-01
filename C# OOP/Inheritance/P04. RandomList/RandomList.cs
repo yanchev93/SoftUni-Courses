@@ -3,35 +3,22 @@ using System.Collections.Generic;
 
 namespace P04._RandomList
 {
-    public class RandomList
+    public class RandomList : List<string>
     {
+        private Random rnd;
+
         public RandomList()
         {
-            this.MyList = new List<string>();
-        }
-
-        public List<string> MyList { get; private set; }
-        public int Counter
-        {
-            get
-            {
-                return this.MyList.Count;
-            }
-        }
-
-        public void Add(string input)
-        {
-            MyList.Add(input);
+            this.rnd = new Random();
         }
 
         public string Remove()
         {
-            Random rnd = new Random();
-            int removeIndex = rnd.Next(0, Counter - 1);
+            int removeIndex = this.rnd.Next(0, this.Count);
 
-            string output = this.MyList[removeIndex];
+            string output = this[removeIndex];
 
-            this.MyList.RemoveAt(removeIndex);
+            this.RemoveAt(removeIndex);
 
             return output;
         }
