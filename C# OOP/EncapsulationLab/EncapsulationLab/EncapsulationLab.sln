@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02.SalaryIncrease", "SalaryIncrease\P02.SalaryIncrease.csproj", "{7D016733-DDBB-46AC-9819-045976322EF7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03.Validation", "P03.Validation\P03.Validation.csproj", "{4F23FEC2-184B-4242-9429-B4944157FC85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03.Validation", "P03.Validation\P03.Validation.csproj", "{4F23FEC2-184B-4242-9429-B4944157FC85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04.FirstAndReserveTeam", "P04.FirstAndReserveTeam\P04.FirstAndReserveTeam.csproj", "{AAD4D046-5242-4C9B-B155-FBDC334B36C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{4F23FEC2-184B-4242-9429-B4944157FC85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F23FEC2-184B-4242-9429-B4944157FC85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F23FEC2-184B-4242-9429-B4944157FC85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAD4D046-5242-4C9B-B155-FBDC334B36C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAD4D046-5242-4C9B-B155-FBDC334B36C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAD4D046-5242-4C9B-B155-FBDC334B36C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAD4D046-5242-4C9B-B155-FBDC334B36C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
