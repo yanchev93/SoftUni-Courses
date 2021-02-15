@@ -66,7 +66,7 @@
             {
                 for (int cols = 0; cols < matrix.GetLength(1); cols++)
                 {
-                    Console.Write(matrix[rows, cols]);
+                    Console.Write(matrix[rows, cols] + " ");
                 }
                 Console.WriteLine();
             }
