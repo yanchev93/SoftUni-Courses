@@ -1,9 +1,7 @@
 ﻿namespace P04.BorderControl
 {
-    public interface IRobot
+    public interface IModel
     {
-        public string Model { get; }
-
         public string Id { get; }
     }
 }

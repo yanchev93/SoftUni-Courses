@@ -1,14 +1,13 @@
 ﻿namespace P04.BorderControl
 {
-    public class Robot : IRobot
+    public class Robot : IModel
     {
+        private string model;
         public Robot(string model, string id)
         {
-            this.Model = model;
+            this.model = model;
             this.Id = id;
         }
-
-        public string Model { get; private set; }
 
         public string Id { get; private set; }
     }
