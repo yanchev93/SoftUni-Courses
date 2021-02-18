@@ -1,6 +1,6 @@
 ﻿namespace P04.BorderControl
 {
-    public interface IModel
+    public interface IId
     {
         public string Id { get; }
     }

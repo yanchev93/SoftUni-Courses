@@ -1,6 +1,6 @@
 ﻿namespace P04.BorderControl
 {
-    public class Robot : IModel
+    public class Robot : IId
     {
         private string model;
         public Robot(string model, string id)

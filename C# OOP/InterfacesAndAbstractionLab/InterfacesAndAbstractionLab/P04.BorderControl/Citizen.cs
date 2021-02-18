@@ -1,6 +1,6 @@
 ﻿namespace P04.BorderControl
 {
-    public class Citizen : IModel
+    public class Citizen : IId
     {
         private string name;
 

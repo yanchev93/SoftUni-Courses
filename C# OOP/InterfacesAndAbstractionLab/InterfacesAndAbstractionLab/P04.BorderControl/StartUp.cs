@@ -9,7 +9,7 @@ namespace P04.BorderControl
     {
         public static void Main()
         {
-            List<IModel> dataForEntries = new List<IModel>();
+            List<IId> dataForEntries = new List<IId>();
 
             string command = Console.ReadLine();
             while (command != "End")
@@ -21,7 +21,7 @@ namespace P04.BorderControl
                     string model = currentCommand[0];
                     string id = currentCommand[1];
 
-                    IModel robot = new Robot(model, id);
+                    IId robot = new Robot(model, id);
 
                     dataForEntries.Add(robot);
                 }
@@ -31,7 +31,7 @@ namespace P04.BorderControl
                     int age = int.Parse(currentCommand[1]);
                     string id = currentCommand[2];
 
-                    IModel citizen = new Citizen(name, age, id);
+                    IId citizen = new Citizen(name, age, id);
 
                     dataForEntries.Add(citizen);
                 }
