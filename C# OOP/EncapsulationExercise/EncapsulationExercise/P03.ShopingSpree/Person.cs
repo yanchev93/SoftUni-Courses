@@ -29,7 +29,7 @@
             }
             private set
             {
-                if (string.IsNullOrEmpty(value))
+                if (string.IsNullOrWhiteSpace(value))
                 {
                     throw new ArgumentException(ConstantExceptions.NameException);
                 }
@@ -59,7 +59,7 @@
         {
             get
             {
-                return this.bag;
+                return this.bag.AsReadOnly();
             }
         }
 
