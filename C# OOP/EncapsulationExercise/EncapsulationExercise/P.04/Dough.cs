@@ -104,15 +104,13 @@ namespace P04.PizzaCalories
 
         private double MakeDough()
         {
-            double caloriesPerGram = 0;
-
             if (this.FlourType.ToLower() == "white")
             {
-                return caloriesPerGram = WhiteBaking();
+                return WhiteBaking();
             }
             else if (this.FlourType.ToLower() == "wholegrain")
             {
-                return caloriesPerGram = WholegrainBaking();
+                return WholegrainBaking();
             }
 
             return 0;

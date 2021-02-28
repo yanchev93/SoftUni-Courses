@@ -6,8 +6,8 @@
 
     public class Engine
     {
-        private List<Person> people;
-        private List<Product> products;
+        private readonly List<Person> people;
+        private readonly List<Product> products;
 
         public Engine()
         {

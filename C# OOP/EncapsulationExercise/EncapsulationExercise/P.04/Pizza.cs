@@ -10,7 +10,7 @@
 
         private Dough dough;
 
-        private List<Topping> toppings;
+        private readonly List<Topping> toppings;
 
         private int numberOfToppings => this.toppings.Count;
 
