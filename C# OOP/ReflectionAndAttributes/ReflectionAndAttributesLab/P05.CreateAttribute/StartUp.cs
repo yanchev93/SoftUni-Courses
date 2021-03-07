@@ -1,12 +1,14 @@
 ﻿using System;
 
-namespace P05.CreateAttribute
+[Author("Ventsi")]
+public class StartUp
 {
-    class Program
+    [Author("Gosho")]
+    public static void Main()
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+
     }
 }
+
+
+

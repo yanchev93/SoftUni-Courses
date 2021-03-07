@@ -1,12 +1,12 @@
-﻿using System;
-
-namespace P06.CodingTracker
+﻿namespace P06.CodingTracker
 {
-    class Program
+    using System;
+
+    public class StartUp
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-            Console.WriteLine("Hello World!");
+
         }
     }
 }

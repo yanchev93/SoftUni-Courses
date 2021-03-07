@@ -1,12 +1,15 @@
-﻿using System;
-
-namespace P04.Collector
+﻿namespace P04.Collector
 {
-    class Program
+    using System;
+
+    public class StartUp
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-            Console.WriteLine("Hello World!");
+            Spy spy = new Spy();
+            string result = spy.AnalyzeAcessModifiers("Hacker");
+
+            Console.WriteLine(result);
         }
     }
 }
