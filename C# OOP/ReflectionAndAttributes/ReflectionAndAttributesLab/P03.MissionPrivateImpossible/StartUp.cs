@@ -1,12 +1,14 @@
-﻿using System;
-
-namespace P03.MissionPrivateImpossible
+﻿namespace P03.MissionPrivateImpossible
 {
-    class Program
+    using System;
+    public class StartUp
     {
-        static void Main()
+        public static void Main()
         {
-            Console.WriteLine("Hello World!");
+            Spy spy = new Spy();
+            string result = spy.RevealPrivateMethods("Hacker");
+
+            Console.WriteLine(result);
         }
     }
 }
