@@ -6,283 +6,171 @@ namespace Tests
 {
     public class ExtendedDatabaseTests
     {
-        private Database extendedDatabase;
-        private Person[] persons;
+        private ExtendedDatabase extendedDb;
 
         [SetUp]
         public void Setup()
         {
-            this.database = new Database(initialData);
-
             Person person1 = new Person(123, "Pesho");
             Person person2 = new Person(1234, "Gosho");
             Person person3 = new Person(12345, "Mitko");
             Person person4 = new Person(123456, "Stoqn");
 
-            this.extendedDatabase = new Database();
+            this.extendedDb = new ExtendedDatabase();
 
-            this.extendedDatabase.Add(person1);
-            this.extendedDatabase.Add(person2);
-            this.extendedDatabase.Add(person3);
-            this.extendedDatabase.Add(person4);
+            this.extendedDb.Add(person1);
+            this.extendedDb.Add(person2);
+            this.extendedDb.Add(person3);
+            this.extendedDb.Add(person4);
         }
 
         [Test]
-        public void AddShouldThrowInvalidOperationExceptionIfTheSameIDIsUsed()
+        public void Add_ThrowException_WhenMoreThan16PeopleAreAdded()
         {
-            // Arrange
-            Person person = new Person(123, "Ivan");
 
-            //Assert
-            Assert.Throws<InvalidOperationException>(() =>
-            { this.extendedDatabase.Add(person); }); // Act
-        }
+            Person[] people = new Person[17];
 
-        [Test]
-        public void AddShouldThrowInvalidOperationExceptionIfTheSameUserNameIsUsed()
-        {
-            // Arrange
-            Person person = new Person(234, "Pesho");
-
-            // Assert
-            Assert.Throws<InvalidOperationException>(() =>
-            { this.extendedDatabase.Add(person); }); // Act
-        }
-
-        [Test]
-        public void RemoveShouldThrowInvalidOperationExceptionIfThereIsNoPersonsInTheDatabase()
-        {
-            // Arrange
-            this.extendedDatabase.Remove();
-            this.extendedDatabase.Remove();
-            this.extendedDatabase.Remove();
-            this.extendedDatabase.Remove();
-
-            // Assert
-            Assert.Throws<InvalidOperationException>(() =>
+            for (int i = 0; i < people.Length; i++)
             {
-                this.extendedDatabase.Remove(); // Act
+                Person person = new Person(i, $"Username{i}");
+
+                people[i] = person;
+            }
+
+
+            Assert.Throws<ArgumentException>(() =>
+            {
+                ExtendedDatabase db =
+                new ExtendedDatabase(people);
             });
         }
 
         [Test]
-        public void CountShouldIncreaseWhenNewUserIsAdded()
+        public void Count_ShouldReturnCorrectValueWhenUsed()
         {
-            // Arrange
-            Person person = new Person(111, "Stoicho");
+            int expectedCount = 4;
+            int actualCount = this.extendedDb.Count;
 
-            // Act
-            int expectedCount = 5;
-
-            this.extendedDatabase.Add(person);
-
-            int actualCount = this.extendedDatabase.Count;
-
-            // Assert
-            Assert.AreEqual(expectedCount, actualCount);
+            Assert.That(actualCount, Is.EqualTo(expectedCount));
         }
 
         [Test]
-        public void CountShouldDecreseWhenUserIsRemovedById()
+        public void Add_ShouldThrowExceptionIfMoreThan16PeopleAreTryedToBeAdded()
         {
-            // Arrange
-            int expectedCount = 3;
-
-            // Act
-            this.extendedDatabase.Remove();
-            int actualCount = this.extendedDatabase.Count;
-
-            // Assert
-            Assert.AreEqual(expectedCount, actualCount);
-        }
-
-        [Test]
-        public void FindByUsernameShouldThrowInvalidOperationExceptionIfNoUserExistWithTheGivenUsername()
-        {
-            // Arrange
-            string findByName = "Dimcho";
-
-            // Assert
-            Assert.Throws<InvalidOperationException>(() =>
-            {
-                this.extendedDatabase.FindByUsername(findByName); // Act
-            });
-        }
-
-        [Test]
-        public void FindByUserNameShouldThrowArgumentNullExceptionIfEmptyStringIsPassed()
-        {
-            // Arrange
-            string findByName = string.Empty;
-
-            // Arrange
-            Assert.Throws<ArgumentNullException>(() =>
-            {
-                this.extendedDatabase.FindByUsername(findByName);
-            });
-        }
-
-        [Test]
-        public void FindByUserNameShouldThrowArgumentNullExceptionIfNullIsPassed()
-        {
-            // Arrange
-            string findByName = null;
-
-            // Arrange
-            Assert.Throws<ArgumentNullException>(() =>
-            {
-                this.extendedDatabase.FindByUsername(findByName);
-            });
-        }
-
-        [Test]
-        public void FindByIDShouldThrowInvalidOperationExceptionIfNoIDExistWithTheGivenID()
-        {
-            // Arrange
-            int findById = 007;
-
-            // Assert
-            Assert.Throws<InvalidOperationException>(() =>
-            {
-                this.extendedDatabase.FindById(findById); // Act
-            });
-        }
-
-        [Test]
-        public void FindByIDShouldThrowArgumenOutOfRangeExceptionIfNegativeIdIsGiven()
-        {
-            // Arrange
-            int findById = -1;
-
-            // Assert
-            Assert.Throws<ArgumentOutOfRangeException>(() =>
-            {
-                this.extendedDatabase.FindById(findById);
-            });
-        }
-
-        [Test]
-        public void ConsturctorAddRangeShouldAddPersons()
-        {
-            // Arrange
-
-            Database extendedData = new Database();
-
-            // Act
+            ExtendedDatabase exDB = new ExtendedDatabase();
 
             for (int i = 0; i < 16; i++)
             {
-                Person person = new Person(i, $"Jhonny{i}");
+                Person person = new Person(i, $"Username{i}");
 
-                extendedData.Add(person);
+                exDB.Add(person);
             }
 
-            int expectedCount = 16;
-            int actualCount = extendedData.Count;
+            Person addPerson = new Person(321, "Abcd");
 
-            // Assert
-            Assert.AreEqual(expectedCount, actualCount);
-        }
-
-        [Test]
-        public void ConstructorShouldThrowArgumentExceptionIfMoreThan16PersonsAreAdded()
-        {
-            // Arrange
-            Person person1 = new Person(0, "A");
-            Person person2 = new Person(1, "B");
-            Person person3 = new Person(2, "C");
-            Person person4 = new Person(3, "D");
-            Person person5 = new Person(4, "E");
-            Person person6 = new Person(5, "F");
-            Person person7 = new Person(6, "G");
-            Person person8 = new Person(7, "H");
-            Person person9 = new Person(8, "J");
-            Person person10 = new Person(9, "K");
-            Person person11 = new Person(10, "L");
-            Person person12 = new Person(11, "M");
-            Person person13 = new Person(12, "N");
-            Person person14 = new Person(13, "O");
-            Person person15 = new Person(14, "P");
-            Person person16 = new Person(15, "Q");
-            Person person17 = new Person(16, "R");
-
-            // Assert
-            Assert.Throws<ArgumentException>(() =>
-            {
-                Database extendedData = new Database(person1, person2, person3, person4, person5, person6, person7, person8, person9, person10, person11, person12, person13, person14, person15, person16, person17); // Act
-            });
-        }
-
-        [Test]
-        public void AddShouldThrowInvalidOperationExceptionIfCountIs16AndWeTryToAddOneMorePerson()
-        {
-            // Arrange
-            Database extendedData = new Database();
-
-            // Act
-            for (int i = 1; i <= 16; i++)
-            {
-                Person person = new Person(i, $"A{i}");
-
-                extendedData.Add(person);
-            }
-
-            Person person0 = new Person(16, "Ivan");
-
-            // Assert
             Assert.Throws<InvalidOperationException>(() =>
-            {
-                extendedData.Add(person0);
-            });
+            exDB.Add(addPerson));
         }
 
         [Test]
-        public void Count16()
+        public void Add_ShouldThrowExceptionIfTheSameUsernameIsTriedToBeAdded()
         {
-            Database data = new Database();
+            Person person = new Person(222, "Gosho");
 
-            for (int i = 1; i <= 16; i++)
-            {
-                Person person = new Person(i, $"A{i}");
-
-                data.Add(person);
-            }
-
-            int expectedCount = 16;
-            int actualCount = data.Count;
-
-            Assert.AreEqual(expectedCount, actualCount);
+            Assert.Throws<InvalidOperationException>(() => this.extendedDb.Add(person));
         }
 
         [Test]
-        public void ConstructorShouldInitializeCollection()
+        public void Add_ShouldThrowExceptionIfTheSameIDIsTriedToBeAdded()
         {
-            Person person1 = new Person(2, "Stoian");
-            Person person2 = new Person(3, "Ivancho");
+            Person person = new Person(123, "Abc");
 
-            var expected = new Person[] { person1, person2 };
-
-            var db = new Database(expected);
-
-            var actual = db.Fetch();
-
-            CollectionAssert.AreEqual(expected, actual);
+            Assert.Throws<InvalidOperationException>(() => this.extendedDb.Add(person));
         }
 
         [Test]
-        public void RemoveShouldRemove()
+        public void Remove_ShouldDecreaseTheCount()
         {
-            var pesho = new Person(1, "P");
-            var gosho = new Person(2, "G");
+            this.extendedDb.Remove();
+            this.extendedDb.Remove();
+            this.extendedDb.Remove();
 
-            var persons = new Person[] { pesho, gosho };
-            var db = new Database(persons);
-            db.Remove();
+            int expectedCount = 1;
+            int actualCount = this.extendedDb.Count;
 
-            var actual = db.Fetch();
-            var expected = new Person[] { pesho };
+            Assert.That(actualCount, Is.EqualTo(expectedCount));
+        }
 
-            Assert.That(actual, Is.EqualTo(expected));
+        [Test]
+        public void Remove_ShouldThrowException()
+        {
+            this.extendedDb.Remove();
+            this.extendedDb.Remove();
+            this.extendedDb.Remove();
+            this.extendedDb.Remove();
+
+            Assert.Throws<InvalidOperationException>(() => this.extendedDb.Remove());
+        }
+
+        [Test]
+        [TestCase("")]
+        [TestCase(null)]
+        public void FindByUsername_ShouldThrowArgumentNullException(string userName)
+        {
+            Assert.Throws<ArgumentNullException>(() => this.extendedDb.FindByUsername(userName));
+        }
+
+        [Test]
+        [TestCase("Ivan")]
+        public void FindByUsername_ShouldThrowInvalidOperationException(string userName)
+        {
+            Assert.Throws<InvalidOperationException>(() => this.extendedDb.FindByUsername(userName));
+        }
+
+        [Test]
+        [TestCase("Gosho")]
+        public void FindByUsername_ShouldReturnThePerson(string userName)
+        {
+            Person expectedUsername = new Person(1234, "Gosho");
+            Person actualUsername = this.extendedDb.FindByUsername(userName);
+
+            Assert.That(actualUsername.Id, Is.EqualTo(expectedUsername.Id));
+            Assert.That(actualUsername.UserName, Is.EqualTo(expectedUsername.UserName));
+        }
+
+        [Test]
+        [TestCase(-20)]
+        public void FindById_ShouldThrowArgumentOutOfRangeException(int id)
+        {
+            Assert.Throws<ArgumentOutOfRangeException>(
+                () => this.extendedDb.FindById(id));
+        }
+
+        [Test]
+        [TestCase(0102)]
+        public void FindById_ShouldThrowInvalidOperationException(int id)
+        {
+            Assert.Throws<InvalidOperationException>(
+                () => this.extendedDb.FindById(id));
+        }
+
+        [Test]
+        [TestCase(1234)]
+        public void FindById_ShouldReturnTheSamePerson(int id)
+        {
+            Person expectedPerson = new Person(1234, "Gosho");
+            Person actualPerson = this.extendedDb.FindById(id);
+
+            Assert.That(actualPerson.Id, Is.EqualTo(expectedPerson.Id));
+            Assert.That(actualPerson.UserName, Is.EqualTo(expectedPerson.UserName));
         }
     }
 }
+
+
+
+
+
+
+
+

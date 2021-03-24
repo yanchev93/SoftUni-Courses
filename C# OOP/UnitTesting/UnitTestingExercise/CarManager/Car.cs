@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CarManager
+namespace CarManager.Test
 {
     public class Car
     {
