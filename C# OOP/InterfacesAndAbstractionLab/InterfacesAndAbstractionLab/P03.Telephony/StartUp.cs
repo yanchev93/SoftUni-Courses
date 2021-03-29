@@ -1,46 +1,33 @@
-﻿namespace P03.Telephony
+﻿using System;
+using P03.Telephony;
+
+class Program
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-
-    public class StartUp
+    static void Main(string[] args)
     {
-        public static void Main()
+        string[] numbers = Console.ReadLine()
+            .Split(' ', StringSplitOptions.RemoveEmptyEntries);
+        string[] urls = Console.ReadLine()
+            .Split(' ', StringSplitOptions.RemoveEmptyEntries);
+
+        Smartphone smartphone = new Smartphone();
+        StationeryPhone stationeryPhone = new StationeryPhone();
+
+        foreach (var number in numbers)
         {
-            string[] numbers = Console.ReadLine().Split();
-            string[] sites = Console.ReadLine().Split();
-
-            Queue<string> queNumbers = new Queue<string>(numbers);
-            Queue<string> queSites = new Queue<string>(sites);
-
-            while (queNumbers.Count > 0)
+            if (number.Length == 10)
             {
-                string number = queNumbers.Dequeue();
-
-                if (number.Length == 7)
-                {
-                    IStationaryPhone stationaryPhone = new StationaryPhone();
-
-                    Console.WriteLine(stationaryPhone.Dialing(number));
-                }
-                else if (number.Length == 10)
-                {
-                    ISmartphone smartphone = new Smartphone();
-
-                    Console.WriteLine(smartphone.Calling(number));
-                }
-
+                Console.WriteLine(smartphone.Call(number));
             }
-
-            while (queSites.Count > 0)
+            else if (number.Length == 7)
             {
-                string webSite = queSites.Dequeue();
-
-                ISmartphone smartphone = new Smartphone();
-
-                Console.WriteLine(smartphone.Browse(webSite));
+                Console.WriteLine(stationeryPhone.Call(number));
             }
+        }
+
+        foreach (var url in urls)
+        {
+            Console.WriteLine(smartphone.Browse(url));
         }
     }
 }
