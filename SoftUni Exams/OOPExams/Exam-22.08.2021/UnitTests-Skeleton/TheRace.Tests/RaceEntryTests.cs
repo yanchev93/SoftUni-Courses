@@ -1,10 +1,11 @@
-using NUnit.Framework;
 using TheRace;
+using NUnit.Framework;
 
 namespace TheRace.Tests
 {
     public class RaceEntryTests
     {
+        private RaceEntry drivers;
 
         [SetUp]
         public void Setup()
