@@ -8,7 +8,7 @@
             decimal price, double overallPerfomance, int generation)
             : base(id, manufacturer, model, price, overallPerfomance, generation)
         {
-            this.OverallPerformance = overallPerfomance * MULTIPLIER;
+            this.OverallPerformance = (overallPerfomance * MULTIPLIER);
         }
     }
 }

@@ -52,10 +52,10 @@ namespace OnlineShop.Models.Products
                 {
                     string exc = $"Manufacturer can not be empty.";
 
-                    throw new ArgumentException(exc);
+                    throw new ArgumentNullException(nameof(this.Manufacturer), exc);
                 }
 
-                this.model = value;
+                this.manufacturer = value;
             }
         }
 
@@ -71,7 +71,7 @@ namespace OnlineShop.Models.Products
                 {
                     string exc = $"Model can not be empty.";
 
-                    throw new ArgumentException(exc);
+                    throw new ArgumentNullException(nameof(this.Model), exc);
                 }
 
                 this.model = value;
@@ -84,7 +84,7 @@ namespace OnlineShop.Models.Products
             {
                 return this.price;
             }
-            private set
+            protected set
             {
                 if (value <= 0m)
                 {
@@ -96,6 +96,7 @@ namespace OnlineShop.Models.Products
                 this.price = value;
             }
         }
+
         public virtual double OverallPerformance
         {
             get
@@ -110,6 +111,8 @@ namespace OnlineShop.Models.Products
 
                     throw new ArgumentException(exc);
                 }
+
+                this.overallPerfomance = value;
             }
         }
 
