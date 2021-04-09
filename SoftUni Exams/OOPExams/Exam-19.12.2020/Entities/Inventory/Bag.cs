@@ -9,7 +9,7 @@ namespace WarCroft.Entities.Inventory
 
     public abstract class Bag : IBag
     {
-        private int capacity = 100;
+        private int capacity;
         private int load;
         private readonly List<Item> items;
 
@@ -28,7 +28,14 @@ namespace WarCroft.Entities.Inventory
             }
             set
             {
-                this.capacity = value;
+                if (value < 0 || value > 100)
+                {
+                    this.capacity = 100;
+                }
+                else
+                {
+                    this.capacity = value;
+                }
             }
         }
 
@@ -37,7 +44,7 @@ namespace WarCroft.Entities.Inventory
 
             get
             {
-                this.load = this.items.Select(x => x.Weight).Sum();
+                this.load = this.items.Sum(x => x.Weight);
 
                 return this.load;
             }
@@ -73,8 +80,6 @@ namespace WarCroft.Entities.Inventory
             {
                 throw new ArgumentException($"No item with name {name} in bag!");
             }
-
-            this.items.Remove(getItem);
 
             return getItem;
         }

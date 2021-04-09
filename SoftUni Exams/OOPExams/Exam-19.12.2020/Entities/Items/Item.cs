@@ -21,7 +21,6 @@ namespace WarCroft.Entities.Items
             if (!character.IsAlive)
             {
                 throw new InvalidOperationException(ExceptionMessages.AffectedCharacterDead);
-
             }
         }
     }

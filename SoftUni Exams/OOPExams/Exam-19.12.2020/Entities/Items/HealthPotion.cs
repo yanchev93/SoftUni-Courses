@@ -5,19 +5,16 @@ namespace WarCroft.Entities.Items
     public class HealthPotion : Item
     {
         private const int WEIGHT = 5;
-        public HealthPotion() 
+        public HealthPotion()
             : base(WEIGHT)
         {
         }
 
         public override void AffectCharacter(Character character)
         {
-            var item = new HealthPotion();
+            base.AffectCharacter(character);
 
-            if (character.IsAlive)
-            {
-                character.UseItem(item);
-            }
+            character.Health += 20;
         }
     }
 }

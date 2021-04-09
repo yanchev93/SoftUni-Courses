@@ -1,7 +1,7 @@
 ﻿namespace WarCroft.Entities.Characters
 {
     using System;
-
+    using WarCroft.Constants;
     using WarCroft.Entities.Characters.Contracts;
     using WarCroft.Entities.Inventory;
 
@@ -18,17 +18,17 @@
 
         public void Attack(Character character)
         {
-            this.EnsureAlive();
-
-            if (character.IsAlive)
+            if (!this.IsAlive || !character.IsAlive)
             {
-                if (character.Name == this.Name)
-                {
-                    throw new InvalidOperationException("Cannot attack self!");
-                }
-
-                character.TakeDamage(ABILITY_POINTS);
+                throw new InvalidOperationException(ExceptionMessages.AffectedCharacterDead);
             }
+
+            if (character.Name == this.Name)
+            {
+                throw new InvalidOperationException(ExceptionMessages.CharacterAttacksSelf);
+            }
+
+            character.TakeDamage(ABILITY_POINTS);
         }
     }
 }

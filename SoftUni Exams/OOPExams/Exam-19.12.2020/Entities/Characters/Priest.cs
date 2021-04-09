@@ -1,5 +1,7 @@
 ﻿namespace WarCroft.Entities.Characters
 {
+    using System;
+    using WarCroft.Constants;
     using WarCroft.Entities.Characters.Contracts;
     using WarCroft.Entities.Inventory;
 
@@ -10,19 +12,19 @@
         private const double ABILITY_POINTS = 40;
 
 
-        public Priest(string name) 
+        public Priest(string name)
             : base(name, BASE_HEALTH_PRIEST, BASE_ARMOR_PRIEST, ABILITY_POINTS, new Backpack())
         {
         }
 
         public void Heal(Character character)
         {
-            this.EnsureAlive();
-
-            if (character.IsAlive)
+            if (!this.IsAlive || !character.IsAlive)
             {
-                character.Health = ABILITY_POINTS;
+                throw new ArgumentException(ExceptionMessages.AffectedCharacterDead);
             }
+
+            character.Health += ABILITY_POINTS;
         }
     }
 }

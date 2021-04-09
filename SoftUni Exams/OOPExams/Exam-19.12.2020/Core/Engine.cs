@@ -24,6 +24,7 @@ namespace WarCroft.Core
 
             while (command != "END")
             {
+
                 try
                 {
                     this.ReadCommand(command);
