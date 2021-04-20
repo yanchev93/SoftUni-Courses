@@ -13,6 +13,7 @@ function diagonal(input) {
     let output = [firstSum, secondSum];
 
     return output.join(' ');
+    
 }
 
 console.log(diagonal([[20, 40],
