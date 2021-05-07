@@ -7,12 +7,16 @@ function createSortedList() {
         arr.sort((a, b) => a - b);
     }
     function remove(index) {
-        arr.splice(index, 1);
-        this.size -= 1;
-        arr.sort((a, b) => a - b);
+        if (0 <= index && index < this.size) {
+            arr.splice(index, 1);
+            this.size -= 1;
+            arr.sort((a, b) => a - b);
+        }
     }
     function get(index) {
-        return arr[index];
+        if (0 <= index && index < this.size) {
+            return arr[index];
+        }
     }
     let list = {
         add,
