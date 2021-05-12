@@ -8,7 +8,7 @@ function solve() {
   } else {
     while (arrText.length) {
       let arr = [];
-      for (let i = 0; i < 3; i++) {
+      for (let i = 0; i < arrText.length; i++) {
         arr.push(arrText.shift() + '.');
       }
       output.innerHTML += `<p>${arr.join('')}</p>`;
