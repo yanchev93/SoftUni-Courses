@@ -31,5 +31,4 @@ function encodeAndDecodeMessages() {
 
         textAreas[1].value = outputText;
     }
-
 }
