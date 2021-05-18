@@ -42,10 +42,27 @@ function solve() {
 
       table.appendChild(tr);
     };
-
-
   });
 
+  buyBtn.addEventListener('click', (e) => {
+    let checkedBoxes = Array.from(document.querySelectorAll('input[type=checkbox]:checked'));
 
-  //table.appendChild(newFurniture);
+    let output = [];
+    let totalPrice = 0;
+    let avrgDec = 0;
+
+    checkedBoxes.forEach(b => {
+      let name = b.parentNode.parentNode.children[1].textContent;
+      let price = Number(b.parentNode.parentNode.children[2].textContent);
+      let decoration = Number(b.parentNode.parentNode.children[3].textContent);
+
+      output.push(name);
+      totalPrice += price;
+      avrgDec += decoration;
+    });
+
+    avrgDec /= output.length;
+
+    textAreaOutput.value = `Bought furniture: ${output.join(', ')}\nTotal price: ${totalPrice.toFixed(2)}\nAverage decoration factor: ${avrgDec}`;
+  });
 }
