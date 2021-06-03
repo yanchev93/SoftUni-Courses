@@ -7,6 +7,7 @@ function add(x) {
     }
 
     sum.toString = () => x;
+    
     return sum;
 }
 
