@@ -1,25 +1,24 @@
 function validator(obj) {
-    let output = {};
-
-    let uri = RegExp('^[.a-zA-z ]+$');
     let method = ['GET', 'POST', 'DELETE', 'CONNECT'];
-    for (const input of Object.keys(obj)) {
-        if (input == 'method') {
-            if (!method.includes(obj[input])) {
-                throw new Error('Invalid request header: Invalid Method');
-            }
-        } else if (input == 'uri') {
-            if (obj[input] == '*' || Regex.k obj[input]) {
-                
-            }
-        } else if (input == 'version') {
 
-        } else if (input == 'message') {
-
-        }
+    if (obj.method == undefined || !method.includes(obj.method)) {
+        throw new Error('Invalid request header: Invalid Method');
     }
-    return output;
+
+    if (obj.uri == undefined || !obj.uri == '*' || !(/^[\.a-zA-z0-9]+$/gm.test(obj.uri))) {
+        throw new Error('Invalid request header: Invalid URI');
+    }
+
+    if (!(['HTTP/0.9', 'HTTP/1.0', 'HTTP/1.1', 'HTTP/2.0'].includes(obj.version))) {
+        throw new Error('Invalid request header: Invalid Version');
+    }
+
+    if (obj.message == undefined || !/^[^<>&\\'"]*$/gm.test(obj.message)) {
+        throw new Error('Invalid request header: Invalid Message');
+    }
+    return obj;
 }
+
 
 validator({
     method: 'GET',
