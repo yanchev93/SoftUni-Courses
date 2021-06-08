@@ -29,8 +29,4 @@ describe("Test lookupChar", () => {
     it("It works", () => {
         assert.equal(lookupChar('123', 1), '2');
     });
-
-    it("It works", () => {
-        assert.equal(lookupChar('', 0), '');
-    });
 });
