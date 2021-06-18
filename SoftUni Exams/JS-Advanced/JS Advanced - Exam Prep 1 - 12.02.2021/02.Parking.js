@@ -61,8 +61,10 @@ class Parking {
             return output.join('\n');
         } else {
             const car = this.vehicles.find(x => x.carNumber == carNumber);
+            if (condition) {
 
-            return `${car.car} == ${car.carNumber} - ${car.payed == true ? 'Has payed' : 'Not payed'}`;
+            }
+            return `${car.carModel} == ${car.carNumber} - ${car.payed == true ? 'Has payed' : 'Not payed'}`;
         }
     }
 
@@ -70,7 +72,9 @@ class Parking {
 
 const parking = new Parking(12);
 
+console.log(parking.addCar("Zolvo t600", "TX3691CA"));
 console.log(parking.addCar("Volvo t600", "TX3691CA"));
+console.log(parking.addCar("Aolvo t600", "TX3691CA"));
 console.log(parking.getStatistics());
 
 console.log(parking.pay("TX3691CA"));
