@@ -61,9 +61,6 @@ class Parking {
             return output.join('\n');
         } else {
             const car = this.vehicles.find(x => x.carNumber == carNumber);
-            if (condition) {
-
-            }
             return `${car.carModel} == ${car.carNumber} - ${car.payed == true ? 'Has payed' : 'Not payed'}`;
         }
     }
