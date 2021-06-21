@@ -7,13 +7,16 @@ class Story {
     }
 
     get likes() {
+        let text = '';
         if (this._likes.length == 0) {
-            console.log(`${this.title} has 0 likes`);
+            text = `${this.title} has 0 likes`;
         } else if (this._likes.length == 1) {
-            console.log(`${this._likes[0]} likes this story!`);
+            text = `${this._likes[0]} likes this story!`;
         } else {
-            console.log(`${this._likes[0]} and ${this._likes.length} others like this story!`);
+            text = `${this._likes[0]} and ${this._likes.length - 1} others like this story!`;
         }
+
+        return text;
     }
 
     like(username) {
@@ -26,7 +29,7 @@ class Story {
         }
 
         this._likes.push(username);
-        return `${username} liked ${this.title}`;
+        return `${username} liked ${this.title}!`;
     }
 
     dislike(username) {
@@ -44,36 +47,89 @@ class Story {
         let objComments;
         let isCreated = false;
 
-        const idNotValid = this._comments.find(x => x.currId == id);
+        const idNotValid = this._comments.find(x => x.idComment == id);
         if (!id || !idNotValid) {
-            let currId = this._comments.length == 0 ? 1 : this._comments.length + 1;
+            let idComment = this._comments.length == 0 ? 1 : this._comments.length + 1;
 
-            objComments = { username, content, currId };
+            objComments = { idComment, username, content, replies: [] };
             this._comments.push(objComments);
 
             isCreated = true;
         } else if (idNotValid) {
-            console.log('stop');
+            let idReply = idNotValid.replies.length == 0 ? 0.1 : (idNotValid.replies.length + 1) / 10;
+            idReply += idNotValid.idComment;
+
+            const objReply = { idReply, username, content };
+            idNotValid.replies.push(objReply);
+
+            return 'You replied successfully';
         }
 
         if (isCreated) {
             return `${username} commented on ${this.title}`;
         }
     }
+
+    toString(sortingType) {
+        let objs = this._comments;
+
+        if (sortingType == 'asc') {
+            objs.sort((a, b) => a.idComment - b.idComment);
+            for (const comment of objs) {
+                if (comment.replies.length > 1) {
+                    comment.replies.sort((a, b) => a.idReply - b.idReply);
+                }
+            }
+        } else if (sortingType == 'desc') {
+            objs.sort((a, b) => b.idComment - a.idComment);
+            for (const comment of objs) {
+                if (comment.replies.length > 1) {
+                    comment.replies.sort((a, b) => b.idReply - a.idReply);
+                }
+            }
+        } else if (sortingType == 'username') {
+            objs.sort((a, b) => a.username.localeCompare(b.username));
+
+            for (const comment of objs) {
+                if (comment.replies.length > 1) {
+                    comment.replies.sort((a, b) => a.username.localeCompare(b.username));
+                }
+            }
+        }
+
+        let output = [];
+
+        output.push(`Title: ${this.title}`);
+        output.push(`Creator: ${this.creator}`);
+        output.push(`Likes: ${this._likes.length}\nComments:`);
+
+        for (const x of objs) {
+            const repliesArr = x.replies;
+            output.push(`-- ${x.idComment}. ${x.username}: ${x.content}`);
+
+            if (repliesArr == 0) {
+                continue;
+            }
+
+            repliesArr.forEach(x => {
+                output.push(`--- ${x.idReply}. ${x.username}: ${x.content}`);
+            });
+        }
+
+        return output.join('\n');
+    }
 }
 
 let art = new Story("My Story", "Anny");
 art.like("John");
-console.log(art.likes); // John likes this story!
-art.dislike("John");
-console.log(art.likes); // My Story has 0 likes
-art.comment("Sammy", "Some Content");
-console.log(art.comment("Ammy", "New Content")); // Ammy commented on My Story
-art.comment("Zane", "Reply", 1);
-// art.comment("Jessy", "Nice :)");
-// console.log(art.comment("SAmmy", "Reply@", 1));
-// console.log()
-// console.log(art.toString('username'));
-// console.log()
-// art.like("Zane");
-// console.log(art.toString('desc'));
+art.likes;
+// art.dislike('Sally');
+art.like('Ivan');
+art.like('Steven');
+art.likes;
+art.comment('Anny', 'Some Content');
+art.comment("Ammy", "New Content", 1);
+art.comment("Zane", "Reply", 2);
+art.comment("Jessy", "Nice :)");
+console.log(art.comment("SAmmy", "Reply@", 2));
+console.log(art.toString('asc'));
