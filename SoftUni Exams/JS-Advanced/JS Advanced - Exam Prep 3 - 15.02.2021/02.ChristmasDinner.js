@@ -50,6 +50,21 @@ class ChristmasDinner {
         this.guests[name] = dish;
         return `You have successfully invited ${name}!`;
     }
+
+    showAttendance() {
+        let output = [];
+
+        let invitedGuests = Object.keys(this.guests);
+        for (const guest of invitedGuests) {
+            const name = guest;
+            const dish = this.guests[guest];
+            const products = this.dishes.find(x => x.recipeName == dish);
+
+            output.push(`${name} will eat ${dish}, which consists of ${products.productsList.join(', ')}`);
+        }
+
+        return output.join('\n');
+    }
 }
 
 let dinner = new ChristmasDinner(300);
@@ -76,8 +91,8 @@ dinner.recipes({
     productsList: ['Beans', 'Peppers', 'Salt']
 });
 
-// dinner.inviteGuests('Ivan', 'Oshav');
-// dinner.inviteGuests('Petar', 'Folded cabbage leaves filled with rice');
-// dinner.inviteGuests('Georgi', 'Peppers filled with beans');
+dinner.inviteGuests('Ivan', 'Oshav');
+dinner.inviteGuests('Petar', 'Folded cabbage leaves filled with rice');
+dinner.inviteGuests('Georgi', 'Peppers filled with beans');
 
-// console.log(dinner.showAttendance());
+console.log(dinner.showAttendance());
