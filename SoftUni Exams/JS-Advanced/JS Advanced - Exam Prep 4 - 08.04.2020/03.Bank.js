@@ -84,7 +84,6 @@ class Bank {
             throw new Error('We have no customer with this ID!');
         }
     }
-
 }
 
 let bank = new Bank('SoftUni Bank');
