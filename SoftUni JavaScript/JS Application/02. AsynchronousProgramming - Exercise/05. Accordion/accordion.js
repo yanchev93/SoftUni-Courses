@@ -1,7 +1,13 @@
 async function solution() {
     const data = await getData();
-    createElements(data);
+    const contents = data.map(id => id._id);
+    this.divsContent = {};
 
+    for (const id of contents) {
+        divsContent[id] = await getExtra(id);
+    }
+
+    data.map(createElements);
 }
 
 window.onload = solution;
@@ -15,19 +21,41 @@ async function getData() {
     return data;
 }
 
-async function createElements(data) {
-    Object.values(data).forEach(({ _id, title }) => {
-        const accordion = e('div', { className: `accordion` });
-        const btn = e('button', { className: 'button', id: _id }, 'More');
-        const span = e('span', {}, title);
-        const head = e('div', { className: 'head' });
+async function getExtra(id) {
+    const response = await fetch('http://localhost:3030/jsonstore/advanced/articles/details/' + id);
+    const data = await response.json();
 
-        head.appendChild(span);
-        head.appendChild(btn);
-        accordion.appendChild(head);
-        document.querySelector('#main').appendChild(accordion);
+    return data.content;
+}
+
+async function createElements({ _id, title }) {
+    const accordion = e('div', { className: `accordion` });
+    const btn = e('button', { className: 'button', id: _id }, 'More');
+    const span = e('span', {}, title);
+    const head = e('div', { className: 'head' });
+
+    const divExtra = e('div', { className: 'extra' });
+    const content = e('p', {}, this.divsContent[_id]);
+
+    btn.addEventListener('click', (e) => {
+        if (e.target.textContent == 'More') {
+            divExtra.style.display = 'block'
+            e.target.textContent = 'Less';
+        } else {
+            divExtra.style.display = 'none'
+            e.target.textContent = 'More';
+        }
     });
 
+    head.appendChild(span);
+    head.appendChild(btn);
+
+    divExtra.appendChild(content);
+
+    accordion.appendChild(head);
+    accordion.appendChild(divExtra);
+
+    document.getElementById('main').appendChild(accordion);
 }
 
 
