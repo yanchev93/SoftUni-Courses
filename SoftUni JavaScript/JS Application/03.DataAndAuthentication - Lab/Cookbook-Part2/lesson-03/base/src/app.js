@@ -47,6 +47,9 @@ function createRecipeCard(recipe) {
 }
 
 window.addEventListener('load', async () => {
+    const token = sessionStorage.getItem('userToken');
+    
+
     const main = document.querySelector('main');
 
     const recipes = await getRecipes();
@@ -81,76 +84,3 @@ function e(type, attributes, ...content) {
     return result;
 }
 
-async function readData() {
-    const url = '';
-
-    const response = await fetch(url);
-    const data = await response.json();
-
-    return data;
-}
-
-async function readDataById(id) {
-    const url = '' + id;
-
-    const response = await fetch(url);
-    const data = await response.json();
-
-    return data;
-}
-
-async function register(data) {
-    const registerUrl = '';
-
-    const response = await fetch(registerUrl, {
-        method: 'post',
-        headers: { 'Content-Type': 'application./json' },
-        body: JSON.stringify(data)
-    });
-
-    if (response.ok) {
-        const data = await response.json();
-        sessionStorage.setItem('authToken', data.accessToken);
-    } else {
-        const error = await response.json();
-        alert(error.message);
-    }
-}
-
-async function login(email, password) {
-    const loginUrl = '';
-
-    const response = await fetch(loginUrl, {
-        method: 'post',
-        headers: { 'Content-Type': 'application./json' },
-        body: JSON.stringify({ email, password })
-    });
-
-    if (response.ok) {
-        const data = await response.json();
-        sessionStorage.setItem('authToken', data.accessToken);
-    } else {
-        const error = await response.json();
-        alert(error.message);
-    }
-}
-
-async function getDataToken(token) {
-    const url = '';
-
-    const options = {
-        method: 'get',
-        headers: {}
-    };
-
-    const token = sessionStorage.getItem('authToken');
-
-    if (token !== null) {
-        options.headers['X-Authorization'] = token;
-    }
-    const response = await fetch(url, options);
-
-    const data = await response.json();
-
-    return data;
-}
