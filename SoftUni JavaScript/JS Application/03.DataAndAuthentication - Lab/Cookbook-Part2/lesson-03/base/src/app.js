@@ -1,12 +1,12 @@
 async function getRecipes() {
-    const response = await fetch('http://localhost:3030/jsonstore/cookbook/recipes');
+    const response = await fetch('http://localhost:3030/data/recipes?select=_id%2Cname%2Cimg');
     const recipes = await response.json();
 
     return Object.values(recipes);
 }
 
 async function getRecipeById(id) {
-    const response = await fetch('http://localhost:3030/jsonstore/cookbook/details/' + id);
+    const response = await fetch('http://localhost:3030/data/recipes/' + id);
     const recipe = await response.json();
 
     return recipe;
@@ -48,7 +48,13 @@ function createRecipeCard(recipe) {
 
 window.addEventListener('load', async () => {
     const token = sessionStorage.getItem('userToken');
-    
+
+    if (token != null) {
+        document.querySelector("#user").style.display = 'inline-block';
+        document.getElementById('logoutBtn').addEventListener('click', onLogOut);
+    } else {
+        document.querySelector("#guest").style.display = 'inline-block';
+    }
 
     const main = document.querySelector('main');
 
@@ -58,6 +64,23 @@ window.addEventListener('load', async () => {
     main.innerHTML = '';
     cards.forEach(c => main.appendChild(c));
 });
+
+async function onLogOut() {
+    const token = sessionStorage.getItem('userToken');
+
+    const response = await fetch('http://localhost:3030/users/logout', {
+        method: 'get',
+        headers: { 'X-Authorization': token }
+    });
+
+    if (response.ok == false) {
+        const error = await response.json();
+        return alert(error.message);
+    }
+
+    sessionStorage.removeItem('userToken');
+    window.location.pathname = 'index.html';
+}
 
 function e(type, attributes, ...content) {
     const result = document.createElement(type);

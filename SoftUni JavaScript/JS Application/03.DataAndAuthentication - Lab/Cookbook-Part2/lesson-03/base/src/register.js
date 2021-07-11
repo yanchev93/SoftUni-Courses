@@ -1,6 +1,6 @@
-document.querySelector('form').addEventListener('submit', onRegisterSubmit);
+document.querySelector('form').addEventListener('submit', onLogin);
 
-async function onRegisterSubmit(ev) {
+async function onLogin(ev) {
     ev.preventDefault();
     const formData = new FormData(ev.target);
 
