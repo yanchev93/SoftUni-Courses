@@ -21,6 +21,7 @@ function solve() {
                objStudent.classSelect = undefined;
             }
          }));
+		 
 
       console.log(Object.values(studentsArray));
    }
