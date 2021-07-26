@@ -11,19 +11,19 @@ function solve() {
    document.querySelector('#searchBtn').addEventListener('click', onClick);
 
    function onClick() {
-      const input = document.getElementById('searchField').value.toLowerCase();
+      const input = document.getElementById('searchField');
+      const inputValue = input.value.toLowerCase();
 
-      Object.values(studentsArray)
-         .forEach(objStudent => Object.entries(objStudent).map(s => {
-            if (s[1] != undefined && s[1].toLowerCase().includes(input)) {
-               objStudent.classSelect = 'select';
-            } else {
-               objStudent.classSelect = undefined;
-            }
-         }));
-		 
+      const allStudents = Object.values(studentsArray).map(s => Object.assign({}, s));
+      const selectedStudents = allStudents.filter(s => Object.values(s).some(value => {
+         if (value) {
+            return value.toLowerCase().includes(inputValue);
+         }
+      }));
 
-      console.log(Object.values(studentsArray));
+      selectedStudents.forEach(x => x.classSelect = 'select');
+      input.value = '';
+      render(allStudentsTemplate(allStudents), tbody);
    }
 }
 
