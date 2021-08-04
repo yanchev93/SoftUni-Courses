@@ -16,10 +16,10 @@ export async function createCar(car) {
     return await api.post(host + '/data/cars', car);
 }
 
-// export async function getMyMemes() {
-//     const userId = sessionStorage.getItem('userId');
-//     return await api.get(host + `/data/memes?where=_ownerId%3D%22${userId}%22&sortBy=_createdOn%20desc`);
-// }
+export async function getMyCars() {
+    const userId = sessionStorage.getItem('userId');
+    return await api.get(host + `/data/cars?where=_ownerId%3D%22${userId}%22&sortBy=_createdOn%20desc`);
+}
 
 export async function getCarById(id) {
     return await api.get(host + '/data/cars/' + id);
