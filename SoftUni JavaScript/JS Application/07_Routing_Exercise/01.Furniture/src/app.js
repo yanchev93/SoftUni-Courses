@@ -8,11 +8,10 @@ import { editPage } from './views/edit.js';
 import { loginPage } from './views/login.js';
 import { registerPage } from './views/register.js';
 
-import * as api from './api/api.js';
+import * as api from './api/data.js';
 
-api.settings.host = 'http://localhost:3030';
+api.settings.host = '';
 
-window.api = api;
 
 page('/', dashboardPage);
 page('/my-furniture', myFurniturePage);
