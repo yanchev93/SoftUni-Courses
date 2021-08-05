@@ -10,6 +10,7 @@ import { createPage } from './views/createView.js';
 import { detailsPage } from './views/detailsView.js';
 import { editPage } from './views/editView.js';
 import { myListingsPage } from './views/myListingsView.js';
+import { searchPage } from './views/searchView.js';
 
 const main = document.querySelector('main');
 setUserNav();
@@ -23,14 +24,13 @@ page('/create', decorateContext, createPage);
 page('/details/:id', decorateContext, detailsPage);
 page('/edit/:id', decorateContext, editPage);
 page('/myListings', decorateContext, myListingsPage);
-
+page('/search', decorateContext, searchPage);
 
 page.start();
 
 function decorateContext(ctx, next) {
     ctx.render = (content) => render(content, main);
     ctx.setUserNav = setUserNav;
-
 
     next();
 }
