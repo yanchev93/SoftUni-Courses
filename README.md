@@ -2,7 +2,7 @@
 
 This repository includes
 
-<h3>Python Basic</h3> - Lecture Ines Ivanova
+<h3>[Python Basic](https://softuni.bg/trainings/3512/programming-basics-with-python-october-2021)</h3> - Lecture Ines Ivanova
 <br></br>
 <h3>C# Fundamentals</h3> - Lecture Stamo Petkov
 <br></br>
@@ -12,4 +12,4 @@ This repository includes
 <br></br>
 <br></br>
 
-<b> [Software University](https://softuni.bg/) </b>
+<h2> [Software University](https://softuni.bg/) </h2>
