@@ -1,14 +1,14 @@
-<p><h1> Courses I have completed in [Software University](https://softuni.bg/)</h1></p>
+<p><h1> Courses I have completed in Software University</h1></p>
 
 This repository includes
 
-<h3>[Python Basic](https://softuni.bg/trainings/3512/programming-basics-with-python-october-2021)</h3> - Lecture Ines Ivanova
+<h3>Python Basic</h3> <ul>Lecture Ines Ivanova</ul>
 <br></br>
-<h3>C# Fundamentals</h3> - Lecture Stamo Petkov
+<h3>C# Fundamentals</h3> <ul>Lecture Stamo Petkov</ul>
 <br></br>
-<h3>C# Advanced & OOP</h3> Lecture Nikolay Kostov
+<h3>C# Advanced & OOP</h3> <ul>Lecture Nikolay Kostov</ul>
 <br></br>
-<h3>JavaScript Advanced & Applications</h3> Lecture Viktor Kostadinov
+<h3>JavaScript Advanced & Applications</h3> <ul>Lecture Viktor Kostadinov</ul>
 <br></br>
 <br></br>
 
