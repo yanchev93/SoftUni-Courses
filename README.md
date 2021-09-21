@@ -2,14 +2,18 @@
 
 This repository includes
 
-<h3>Python Basic</h3> <ul>Lecture Ines Ivanova</ul>
+<h3>Python Basic</h3>
+- Lecture Ines Ivanova
 <br></br>
-<h3>C# Fundamentals</h3> <ul>Lecture Stamo Petkov</ul>
+<h3>C# Fundamentals</h3>
+-  Lecture Stamo Petkov
 <br></br>
-<h3>C# Advanced & OOP</h3> <ul>Lecture Nikolay Kostov</ul>
+<h3>C# Advanced & OOP</h3>
+-  Lecture Nikolay Kostov
 <br></br>
-<h3>JavaScript Advanced & Applications</h3> <ul>Lecture Viktor Kostadinov</ul>
+<h3>JavaScript Advanced & Applications</h3>
+-  Lecture Viktor Kostadinov
 <br></br>
 <br></br>
 
-<h2> [Software University](https://softuni.bg/) </h2>
+<b> [Software University](https://softuni.bg/) </b>
