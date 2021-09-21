@@ -1,4 +1,4 @@
-<p><h2> Courses I have finished in [Software University](https://softuni.bg/)</h2></p>
+<p><h1>Courses I have completed in [Software University](https://softuni.bg)</h1></p>
 
 This repository includes
 
