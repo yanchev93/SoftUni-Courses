@@ -12,4 +12,4 @@ This repository includes
 <br></br>
 <br></br>
 
-[Software University](https://softuni.bg/)
+<b> [Software University](https://softuni.bg/) <b>
