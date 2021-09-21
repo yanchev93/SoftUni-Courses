@@ -9,7 +9,7 @@ This repository includes
 <h3>C# Advanced & OOP</h3> Lecture Nikolay Kostov
 <br></br>
 <h3>JavaScript Advanced & Applications</h3> Lecture Viktor Kostadinov
-
-**[Software University](https://softuni.bg/)**.
+<br></br>
+**[Software University](https://softuni.bg/)**. 
 
 
